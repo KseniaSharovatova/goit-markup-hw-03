@@ -19,7 +19,12 @@ header {
   text-decoration: none;
 }
 .item:not(:last-child) {
-  margin-right: 57px;
+  margin-right: 30px;
+}
+.item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link.current {
@@ -45,6 +50,8 @@ header {
 .banner {
   background-color: var(--dark-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero {
@@ -52,8 +59,8 @@ header {
   font-size: 44px;
   line-height: 1.36;
   color: var(--white-color);
-  padding-top: 200px;
   margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .button {
@@ -61,7 +68,6 @@ header {
   height: 30px;
   color: var(--white-color);
   background-color: var(--blue-color);
-  margin-bottom: 200px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
@@ -90,15 +96,22 @@ header {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--black-color);
-  padding-bottom: 12px;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
+
+.team-name {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .section-header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+
   margin: 0;
 }
 
@@ -126,10 +139,13 @@ ul {
 p {
   color: var(--grey-color);
   font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .team-section {
   background-color: var(--background-color);
   padding-bottom: 92px;
+  padding-top: 92px;
 }
 
 footer {
@@ -143,6 +159,8 @@ footer {
   line-height: 1.71;
   text-decoration: none;
   font-style: normal;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 .container {
   margin-left: auto;
@@ -153,17 +171,22 @@ footer {
 }
 .menu-nav {
   display: flex;
+  align-items: center;
 }
+
 .main-nav {
   display: flex;
   align-items: center;
-  padding-top: 20px;
 }
+.logo {
+  margin-right: 93px;
+}
+
 .contacts-nav {
   display: flex;
-  margin-left: auto;
-  padding-top: 20px;
+
   align-items: center;
+  margin-left: auto;
 }
 .points {
   padding-bottom: 94px;
@@ -176,6 +199,12 @@ footer {
 
 .points-list {
   display: flex;
+  margin-top: 50px;
+}
+
+.team-list {
+  display: flex;
+  margin-top: 50px;
 }
 
 .item-points:not(:last-child) {
@@ -194,7 +223,34 @@ footer {
 .item-button + .item-button {
   margin-left: 8px;
 }
+
+.item-button-portfolio {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.item-button-portfolio:nth-child(3n) {
+  margin-right: 0;
+}
+
+.item-button-portfolio:nth-child(n + 7) {
+  margin-bottom: 0px;
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.points-list .item {
+  width: calc((100%-90px) / 4);
+}
+.points-list .item-points {
+  width: calc((100%-60px) / 3);
+}
+.team-list .item-points {
+  width: calc((100%-90px) / 4);
+}
+.portfolio-list .item-button-portfolio {
+  width: calc((100%-60px) / 3);
 }
