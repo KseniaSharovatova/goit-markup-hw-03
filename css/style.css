@@ -103,6 +103,16 @@ header {
 .team-name {
   padding-top: 30px;
   padding-bottom: 30px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.portfolio-name {
+  padding: 30px;
+  border: 1px solid #eeeeee;
 }
 
 .section-header {
@@ -122,6 +132,7 @@ header {
   letter-spacing: 0.03em;
   line-height: 36px;
   color: var(--black-color);
+  margin: 0;
 }
 .portfolio-link {
   text-decoration: none;
@@ -142,6 +153,13 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .team-section {
   background-color: var(--background-color);
   padding-bottom: 92px;
@@ -243,14 +261,14 @@ footer {
   padding: 0;
 }
 .points-list .item {
-  width: calc((100%-90px) / 4);
+  width: calc((100% - 90px) / 4);
 }
 .points-list .item-points {
-  width: calc((100%-60px) / 3);
+  width: calc((100% - 60px) / 3);
 }
 .team-list .item-points {
-  width: calc((100%-90px) / 4);
+  width: calc((100% - 90px) / 4);
 }
 .portfolio-list .item-button-portfolio {
-  width: calc((100%-60px) / 3);
+  width: calc((100% - 60px) / 3);
 }
